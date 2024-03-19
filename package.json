@@ -1,4 +1,5 @@
 {
+  "homepage": "https://johandemierda.github.io/johan-s-site/",
   "name": "sybrax_spotify_app",
   "version": "1.0.0",
   "description": "",
@@ -6,8 +7,10 @@
   "main": "src/app.js",
   "scripts": {
     "dev": "nodemon src/app.js --devmode",
-    "start": "node src/app.js",
-    "get-refresh-token": "node scripts/get-refresh-token.js"
+    "build": "node src/app.js",
+    "get-refresh-token": "node scripts/get-refresh-token.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "license": "ISC",
   "dependencies": {
