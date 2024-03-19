@@ -1,0 +1,131 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="shortcut icon" href="./assets/img/xD.png">
+</script><title>johan.</title></head><body><canvas id="canvas"></canvas>
+</head>
+<body>
+  <div class="card-container">
+    <!-- First Card -->
+    <div class="card nitro-card">
+      <div class="card-header">
+      <div
+        class="banner-img"
+        style="background: url('./assets/img/canam.gif')"
+      ></div>
+    </div>
+    <div class="card-body">
+      <div class="profile-header">
+        <div class="profil-logo">
+          <img src="./assets/img/pfp.jpg" />
+        </div>
+        <div class="badges-container">
+          <div class="badge-item">
+            <a href="https://open.spotify.com/user/ig6890tu1caz9rduwfjpwh0gb" target="_blank">
+            <img src="./assets/img/badges/spotify.svg" alt="" /></a>
+            <div class="tooltip tooltip-up">Spotify</div>
+          </div>
+          <div class="badge-item">
+            <a href="https://stats.fm/user/johhan" target="_blank">
+            <img src="./assets/img/badges/statsfm.svg" alt="" /></a>
+            <div class="tooltip tooltip-up">Stats.fm</div>
+          </div>
+          <div class="badge-item">
+            <a href="https://discord.com/users/1115453800979894282" target="_blank">
+            <img src="./assets/img/badges/dc.svg" alt="" /></a>
+            <div class="tooltip tooltip-up">Discord</div>
+          </div>
+          <div class="badge-item">
+            <a href="https://www.youtube.com/@theyoungjohan" target="_blank">
+            <img src="./assets/img/badges/youtube.svg" alt="" /></a>
+            <div class="tooltip tooltip-up">YouTube</div>
+          </div>
+          <div class="badge-item">
+            <a href="https://es.namemc.com/profile/debuena" target="_blank">
+            <img src="./assets/img/badges/nmc.svg" alt="" /></a>
+            <div class="tooltip tooltip-up">NameMC</div>
+          </div>
+          <div class="badge-item">
+            <a href="https://steamcommunity.com/id/malparidostodos" target="_blank">
+            <img src="./assets/img/badges/steam.svg" alt="" /></a>
+            <div class="tooltip tooltip-up">Steam</div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-body">
+        <div class="username">@johan</div>
+        <hr />
+        <div class="basic-infos">
+          <p>young pa' toa' la vida you know</p>
+        </div>
+        <div class="basic-infos">
+          <div class="category-title">Escuchando Spotify</div>
+          <div id="spotify-container">
+            <div class="spotify hidden">
+              <div class="spotify-music-infos">
+                <div class="music-cover">
+                  <img src="./assets/img/asd.jpg" />
+                </div>
+                <div class="music-text">
+                  <div class="music-title">
+                    <b
+                      ><a href="https://open.spotify.com/user/ig6890tu1caz9rduwfjpwh0gb" target="_blank">
+                        Tí­tulo
+                      </a></b
+                    >
+                  </div>
+                  <div class="music-artist">
+                    de
+                    <a href="https://open.spotify.com/user/ig6890tu1caz9rduwfjpwh0gb" target="_blank">
+                    </a>
+                  </div>
+                  <div class="music-album">
+                    del Álbum
+                    <a href="https://open.spotify.com/user/ig6890tu1caz9rduwfjpwh0gb" target="_blank">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="spotify-music-tracker">
+                <div class="music-tracker-container">
+                  <div class="music-tracker"></div>
+                </div>
+                <div class="timer">
+                  <span>0:00</span>
+                  <span>Escuchando</span>
+                  <span>0:00</span>
+                </div>
+              </div>
+            </div>
+            <div class="spotify-listen-nothing">
+              <div class="text">No está sonando na' papi volvé después.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/dev.js"></script>
+  <script language="JavaScript1.2">
+
+    function disabletext(e){
+    return false
+    }
+    
+    function reEnable(){
+    return true
+    }
+    
+    //if the browser is IE4+
+    document.onselectstart=new Function ("return false")
+    
+    //if the browser is NS6
+    if (window.sidebar){
+    document.onmousedown=disabletext
+    document.onclick=reEnable
+    }
+    </script>
+</body>
